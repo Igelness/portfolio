@@ -6,7 +6,7 @@ let gulp = require("gulp"),
   rename = require("gulp-rename"),
   del = require("del"),
   autoprefixer = require("gulp-autoprefixer");
-
+  
 gulp.task("clean", async function() {
   del.sync("dist");
 });
@@ -35,9 +35,7 @@ gulp.task("script", function() {
 
 gulp.task("js", function() {
   return gulp
-    .src([
-      "node_modules/magnific-popup/dist/jquery.magnific-popup.js"
-    ])
+    .src(["node_modules/magnific-popup/dist/jquery.magnific-popup.js"])
     .pipe(concat("libs.min.js"))
     .pipe(uglify())
     .pipe(gulp.dest("app/js"))
