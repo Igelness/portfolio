@@ -49,6 +49,7 @@
 .header__contacts {
   font-size: 16px;
   margin-top: 9px;
+  text-align: right;
   a {
     text-decoration: none;
     color: #fff;
@@ -57,4 +58,8 @@
       color: #dee0e3;
     }
   }
+}
+
+.header__phone {
+  margin-right: 53px;
 }
