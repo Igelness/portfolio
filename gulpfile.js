@@ -71,6 +71,8 @@ gulp.task("export", async function() {
   let buildFonts = gulp.src("app/fonts/**/*.*").pipe(gulp.dest("dist/fonts"));
 
   let buildImg = gulp.src("app/images/**/*.*").pipe(gulp.dest("dist/images"));
+
+  let buildFavicon = gulp.src("app/favicon/*.*").pipe(gulp.dest("dist/favicon"));
 });
 
 gulp.task("watch", function() {

@@ -1,0 +1,60 @@
+.header {
+  min-height: 65px;
+  background-color: #0d47a1;
+  border-radius: 2px;
+  box-shadow: 0 8px 6px -10px black;
+}
+
+.header__content {
+  display: flex;
+  margin-top: 15px;
+}
+
+.header__logo-link {
+  font-family: "Playball";
+  text-decoration: none;
+  color: #fff;
+  font-size: 22px;
+  margin-right: 30px;
+  padding: 0px 5px;
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  &:active {
+    background-color: #265aab;
+  }
+}
+
+.header__menu {
+  a {
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 16px;
+    &:hover {
+      transition: 0.3s;
+      color: #dee0e3;
+      text-decoration: none;
+    }
+    &:active {
+      background-color: #265aab;
+    }
+  }
+}
+
+.active {
+  background-color: #265aab;
+}
+
+.header__contacts {
+  font-size: 16px;
+  margin-top: 9px;
+  a {
+    text-decoration: none;
+    color: #fff;
+    &:hover {
+      transition: 0.3s;
+      color: #dee0e3;
+    }
+  }
+}
