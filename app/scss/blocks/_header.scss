@@ -7,7 +7,7 @@
 
 .header__content {
   display: flex;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 .header__logo-link {
@@ -63,4 +63,27 @@
 
 .header__phone {
   margin-right: 53px;
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    left: 40px;
+    top: 3px;
+    height: 16px;
+    width: 16px;
+    background-image: url(../images/header__phone.ico);
+  }
+}
+
+.header__email {
+  padding-bottom: 5px;
+}
+
+.header__email:before {
+  content: "\2709";
+  font-size: 22px;
+  color: #fff;
+  margin-right: 10px;
+  position: relative;
+  top: 3px;
 }
