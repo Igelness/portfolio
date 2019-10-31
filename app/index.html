@@ -9,15 +9,15 @@
   <!--Fonts-->
   <link href="https://fonts.googleapis.com/css?family=Playball|Roboto:300,400,700&display=swap&subset=cyrillic"
     rel="stylesheet">
-  <!--Styles-->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.min.css">
   <!--Favicon-->
   <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
   <link rel="manifest" href="favicon/site.webmanifest">
+  <!--Styles-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
 
   <title>Сайт-портфолио начинающего веб-разработчика Воробьёва Антона</title>
 </head>
@@ -97,12 +97,15 @@
             <h3 class="contact-me__title">Contact me</h3>
           </div>
           <div class="col-xl-12">
-            <form class="contact-me__form" action="">
-              <input class="contact-me__input" type="text" placeholder="Имя">
-              <input class="contact-me__input" type="text" placeholder="Email Address">
-              <input class="contact-me__input" type="text" placeholder="Контактный телефон">
-              <textarea class="contact-me__input textarea" placeholder="Сообщение" cols="30" rows="2"></textarea>
-              <input class="contact-me__submit" type="submit" value="Отправить">
+            <form class="contact-me__form" action="mail.php" method="POST">
+              <input class="contact-me__input" type="text" name="username" maxlength="30" value="" placeholder="Имя">
+              <input class="contact-me__input" type="text" name="usermail" maxlength="50" value=""
+                placeholder="Email Address">
+              <input class="contact-me__input" type="text" name="userphone" maxlength="30" value=""
+                placeholder="Контактный телефон">
+              <textarea class="contact-me__input textarea" name="usermessage" placeholder="Сообщение" cols="30"
+                rows="2"></textarea>
+              <button id="contact-me__submit" type="submit">Отправить </button>
             </form>
           </div>
         </div>
