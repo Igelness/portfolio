@@ -22,7 +22,7 @@ $mail->addAddress('a.a.vorobyev0@gmail.com');
 $mail->isHTML(true);                                  
 
 $mail->Subject = 'Сообщение с сайта-портфолио';
-$mail->Body    = '' .$name . ' Отправил сообщение с сайта-портфолио, телефон: '    .$phone. '<br>Почта этого пользователя: ' .$email. '<br>Сообщение: ' .$msg ;
+$mail->Body    = '' .$name . ' отправил сообщение с сайта-портфолио, телефон: '    .$phone. '<br>Почта этого пользователя: ' .$email. '<br>Сообщение: ' .$msg ;
 $mail->AltBody = '';
 
 if(!$mail->send()) {
