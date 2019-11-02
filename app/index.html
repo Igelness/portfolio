@@ -98,13 +98,13 @@
           </div>
           <div class="col-xl-12">
             <form class="contact-me__form" action="mail.php" method="POST">
-              <input class="contact-me__input" type="text" name="username" maxlength="30" value="" placeholder="Имя">
+              <input class="contact-me__input" type="text" name="username" maxlength="30" value="" placeholder="Имя" required>
               <input class="contact-me__input" type="text" name="usermail" maxlength="50" value=""
-                placeholder="Email Address">
+                placeholder="Email Address" required>
               <input class="contact-me__input" type="text" name="userphone" maxlength="30" value=""
-                placeholder="Контактный телефон">
+                placeholder="Контактный телефон" required>
               <textarea class="contact-me__input textarea" name="usermessage" placeholder="Сообщение" cols="30"
-                rows="2"></textarea>
+                rows="2" required></textarea>
               <button id="contact-me__submit" type="submit">Отправить </button>
             </form>
           </div>
@@ -116,7 +116,6 @@
         <div class="container">
           <div class="row">
             <div class="col-xl-6">
-
               <h4 class="footer__social-title">Различные полезные ссылки: </h4>
               <div class="footer__social-links">
                 <a class="footer__social-links-item footer__resume"
