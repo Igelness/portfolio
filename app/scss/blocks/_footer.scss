@@ -55,6 +55,37 @@
   }
 }
 
+.footer__github,
+.footer__resume {
+  position: relative;
+  span {
+    margin-left: 10px;
+  }
+}
+
+
+
+.footer__github::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/footer-github.svg);
+  position: absolute;
+  left: 24px;
+  top: 12px;
+}
+
+.footer__resume:before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/footer-resume.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 27px;
+  top: 11px;
+}
+
 .footer__vk {
   background-image: url(../images/footer-socialmedia.png);
   background-repeat: no-repeat;
