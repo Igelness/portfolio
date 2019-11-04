@@ -1,6 +1,20 @@
-@media(max-width: 1199px) {
+@media (min-width: 510px) and (max-width: 991px) {
+  .header__menu,
+  .header__contacts {
+    display: flex !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .header__menu,
+  .header__contacts {
+    display: block !important;
+  }
+}
+
+@media (max-width: 1199px) {
   .footer__social-title {
-    padding-top: 15px;
+    padding-top: 25px;
   }
   .footer__social-items {
     display: flex;
@@ -24,11 +38,14 @@
   * {
     animation: none !important;
   }
+  .footer__social-links-item {
+    margin-bottom: 15px;
+  }
 }
 
 @media (max-width: 767px) {
   .scrollbtn {
-    display: none;
+    display: none !important;
   }
 
   .contact-me__input {

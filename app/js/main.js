@@ -9,9 +9,9 @@ $(window).on("hashchange", function(e) {
 $(function() {
   $(window).scroll(function() {
     if ($(this).scrollTop() > 150) {
-      $(".scrollbtn").css("opacity", "1");
+      $(".scrollbtn").css("display", "block");
     } else {
-      $(".scrollbtn").css("opacity", "0");
+      $(".scrollbtn").css("display", "none");
     }
   });
 });
