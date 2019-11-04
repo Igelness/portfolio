@@ -23,10 +23,12 @@
 </head>
 
 <body>
+  <div class="scrollbtn"><a class="upbtn" href="#"><span></span></a></div>
   <header class="header">
     <div class="container">
       <div class="row">
-        <div class="col-xl-9">
+        <div class="col-md-12 col-lg-6 col-xl-9">
+          <div><a href="#" class="header__mobile-btn"></a></div>
           <div class="header__content">
             <div class="header__logo"><a class="header__logo-link " href="index.html">Anton Vorobyov</a></div>
             <nav class="header__menu">
@@ -37,7 +39,7 @@
             </nav>
           </div>
         </div>
-        <div class="col-xl-3">
+        <div class="col-md-12 col-lg-6 col-xl-3">
           <div class="header__contacts">
             <div class="header__phone"><a href="tel:+79006295729">+7 (900) 629-57-29</a></div>
             <div class="header__email"><a href="mailto:a.a.vorobyev0@gmail.com">a.a.vorobyev0@gmail.com</a></div>
@@ -61,21 +63,21 @@
                 адаптивной версткой</p>
               <hr class="divider">
               <div class="row">
-                <div class="col xl-4">
+                <div class="col md-4">
                   <ul class="jumbotron__features animated fadeInDown delay-2s">
                     <li class="jumbotron__features-item ">HTML/HTML5, CSS/CSS3</li>
                     <li class="jumbotron__features-item ">Adobe Photoshop, Figma, Zeplin</li>
                     <li class="jumbotron__features-item ">LESS, SASS, SCSS</li>
                   </ul>
                 </div>
-                <div class="col-xl-4">
+                <div class="col-md-4">
                   <ul class="jumbotron__features animated fadeInDown delay-2s">
                     <li class="jumbotron__features-item">БЭМ, Git, Gulp 4</li>
                     <li class="jumbotron__features-item">Кроссбраузерная, адаптивная верстка</li>
                     <li class="jumbotron__features-item">Bootstrap 4</li>
                   </ul>
                 </div>
-                <div class="col-xl-4">
+                <div class="col-md-4">
                   <ul class="jumbotron__features animated fadeInDown delay-2s">
                     <li class="jumbotron__features-item">jQuery, работа с DOM, событиями</li>
                     <li class="jumbotron__features-item">Спрайты, Retina, SVG</li>
@@ -112,47 +114,47 @@
         </div>
       </section>
     </div>
-    <footer class="footer">
-      <section class="social">
-        <div class="container">
-          <div class="row">
-            <div class="col-xl-6">
-              <h4 class="footer__social-title">Различные полезные ссылки: </h4>
-              <div class="footer__social-links">
-                <a class="footer__social-links-item footer__resume"
-                  href="https://spb.hh.ru/resume/5275a3edff075aa82c0039ed1f4d687a553455"> <span>Resume</span></a>
-                <a class="footer__social-links-item footer__github" href="https://github.com/igelness">
-                  <span>GitHub</span>
-                </a>
-              </div>
-            </div>
-            <div class="col-xl-6">
-              <h4 class="footer__social-title">Социальные сети: </h4>
-              <ul class="footer__social-items">
-                <li>
-                  <div class="footer__social-item"><a class="footer__vk" href="https://vk.com/id78226915"
-                      target="_blank"></a></div>
-                </li>
-                <li>
-                  <div class="footer__social-item"><a class="footer__twitter" href="https://twitter.com/igelness"
-                      target="_blank"></a>
-                  </div>
-                </li>
-                <li>
-                  <div class="footer__social-item"><a class="footer__google" href="#"></a></div>
-                </li>
-              </ul>
+  </main>
+  <footer class="footer">
+    <section class="social">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6">
+            <h4 class="footer__social-title">Различные полезные ссылки: </h4>
+            <div class="footer__social-links">
+              <a class="footer__social-links-item footer__resume"
+                href="https://spb.hh.ru/resume/5275a3edff075aa82c0039ed1f4d687a553455"> <span>Resume</span></a>
+              <a class="footer__social-links-item footer__github" href="https://github.com/igelness">
+                <span>GitHub</span>
+              </a>
             </div>
           </div>
+          <div class="col-xl-6">
+            <h4 class="footer__social-title">Социальные сети: </h4>
+            <ul class="footer__social-items">
+              <li>
+                <div class="footer__social-item"><a class="footer__vk" href="https://vk.com/id78226915"
+                    target="_blank"></a></div>
+              </li>
+              <li>
+                <div class="footer__social-item"><a class="footer__twitter" href="https://twitter.com/igelness"
+                    target="_blank"></a>
+                </div>
+              </li>
+              <li>
+                <div class="footer__social-item"><a class="footer__google" href="#"></a></div>
+              </li>
+            </ul>
+          </div>
         </div>
-      </section>
-      <section class="copy">
-        <div class="container-fluid">
-          &copy; 2019, Антон Воробьёв
-        </div>
-      </section>
-    </footer>
-  </main>
+      </div>
+    </section>
+    <section class="copy">
+      <div class="container-fluid">
+        &copy; 2019, Антон Воробьёв
+      </div>
+    </section>
+  </footer>
 
 
   <!--Bootstrap-->
@@ -168,6 +170,7 @@
   <!--Libraries-->
   <script src="js/libs.min.js"></script>
   <script src="js/main.js"></script>
+
 </body>
 
 </html>

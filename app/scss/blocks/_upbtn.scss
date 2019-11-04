@@ -1,0 +1,29 @@
+.scrollbtn {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.upbtn {
+  height: 50px;
+  width: 50px;
+  background-color: #3498db;
+  border-radius: 100%;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  &:hover {
+    transition: 0.5s;
+    background-color: #aaa;
+  }
+  span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -8px;
+    margin-top: -12px;
+    height: 0;
+    width: 0;
+    border: 8px solid transparent;
+    border-bottom-color: #ffffff;
+  }
+}

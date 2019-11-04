@@ -67,7 +67,7 @@
   &:before {
     content: "";
     position: absolute;
-    left: 40px;
+    right: 145px;
     top: 3px;
     height: 16px;
     width: 16px;
@@ -77,13 +77,23 @@
 
 .header__email {
   padding-bottom: 5px;
+  &:before {
+    content: "\2709";
+    font-size: 22px;
+    color: #fff;
+    margin-right: 10px;
+    position: relative;
+    top: 3px;
+  }
 }
 
-.header__email:before {
-  content: "\2709";
-  font-size: 22px;
-  color: #fff;
-  margin-right: 10px;
-  position: relative;
-  top: 3px;
+.header__mobile-btn {
+  width: 24px;
+  height: 24px;
+  display: none;
+  position: absolute;
+  right: 15px;  
+  top: 27px;
+  background-image: url(../images/header__mobilebtn.png);
+  background-repeat: no-repeat;
 }
