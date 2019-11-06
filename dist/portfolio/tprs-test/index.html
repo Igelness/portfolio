@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TPRS-TEST</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700&display=swap&subset=cyrillic"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__inner">
+      <div class="header__btn">
+        <a data-fancybox data-src="#header__modal" data-toggle="modal" href="javascript:;">Войти</a>
+      </div>
+      <div class="header__logo"><a href="#"><img src="images/header-logo.svg" alt=""></a></div>
+      <div class="header__help">
+        <div class="header__help-link"><a href="#">Помощь</a></div>
+        <div class="header__btn-menu">
+          <span class="header__icon-bars header__icon-bars-changed"></span>
+        </div>
+        <div class="header__help-dropdown desktop-dropdown mobile-dropdown">
+          <ul>
+            <li> <a href="#">Как это работает</a> </li>
+            <li> <a href="#">Вопрос-ответ</a> </li>
+            <li> <a href="#">Служба поддержки</a></li>
+            <div class="header__btn-mobile">
+              <a data-fancybox data-src="#header__modal" data-toggle="modal" href="javascript:;">Войти</a>
+            </div>
+          </ul>
+        </div>
+      </div>
+      <div id="header__modal">
+        <div class="header__modal-text">
+          Введите логин и пароль для входа в Личный кабинет
+        </div>
+        <div class="form">
+          <input type="text" placeholder="Логин" />
+          <input type="text" placeholder="Пароль" />
+          <input type="submit" value="Войти" />
+        </div>
+        <div class="header__modal-password">
+          <a href="#">Забыли пароль?</a>
+        </div>
+        <div class="header__modal-signup">
+          <a href="#"> Регистрация</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="search">
+    <div class="container">
+      <div class="search__inner">
+        <div class="search__inner-title">Поиск начислений</div>
+        <div class="search__inner-form">
+          <form action="">
+            <input type="search" placeholder="Введите данные для поиска">
+            <input type="submit" class="search-btn" value="Найти">
+          </form>
+        </div>
+        <div class="search__magnifier-mobile">
+          <span class="search__icon-magnifier"></span>
+        </div>
+        <div class="search__inner-subtitle">Чем больше параметров введено, тем полнее результаты поиска</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="payment">
+    <div class="container">
+      <div class="payment__inner">
+        <div class="payment__inner-title">
+          Здесь можно оплатить
+        </div>
+        <div class="payment__inner-title-mobile">
+          Узнайте, как оплатить
+        </div>
+
+        <div class="payment__inner-content">
+          <ul class="accordion">
+            <li>
+              <div class="payment__penalties">
+                <img src="images/penalties-mobile-icon.png" alt="">
+                <a class="payment__penalties-desktop" href="#">Штрафы и пошлины ГИБДД</a>
+                <div class="accordion__triangle triangle-open" src="images/accordion-triangle-down.png" alt=""> </div>
+                <a class="payment__penalties-mobile toggle" href="javascript:void(0);">Штрафы ГИБДД</a>
+                <div class="trafficpolice__penalties-text-mobile">
+                  <p>Для поиска укажите номера водительского удостоверения и свидетельства о регистрации ТС или номер
+                    штрафа.
+                  </p>
+                  <p>Если у вас есть на руках постановление о штрафе, вы можете указать реквизиты самостоятельно.</p>
+                  <span>платить Вовремя — дешевле!</span>
+                  <p>В первые 20 дней после выдачи постановления штраф можно оплатить со скидкой 50%. Для своевременной
+                    оплаты
+                    штрафов настройте уведомления в Личном кабинете.</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="payment__fees-mobile">
+                <img src="images/fees-mobile-icon.png" alt="">
+                <div class="accordion__triangle triangle-open" src="images/accordion-triangle-down.png" alt=""> </div>
+                <a class="payment__fees-mobile-link toggle" href="javascript:void(0);">Пошлины ГИБДД</a>
+                <div class="trafficpolice__fees-text-mobile">
+                  <p>Перейдите по ссылке и укажите вид пошлины и отделение ГИБДД, предоставляющее вам услугу.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="payment__debts-mobile">
+                <img src="images/debts-mobile-icon.png" alt="">
+                <div class="accordion__triangle triangle-open" src="images/accordion-triangle-down.png" alt=""> </div>
+                <a class="payment__debts-mobile toggle" href="javascript:void(0);">Судебные задолженности</a>
+                <div class="debts__content-text-mobile">
+                  <p>Для поиска начислений в ГИС ГМП укажите документы:
+                    паспорт РФ, ИНН, СНИЛС или номер Исполнительного производства</p>
+                  <p>Вы можете указать реквизиты платежа самостоятельно, заполнив форму.</p>
+                  <div class="debts__content-text_lower"><span>Удобно!</span>
+                    <p>Судебные задолженности можно погасить как сразу, так и по частям, комфортными для вас платежами.
+                      Информацию
+                      о совершенных платежах сохраняйте в Личном кабинете.</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="payment__taxes-mobile">
+                <img src="images/taxes-mobile-icon.png" alt="">
+                <div class="accordion__triangle triangle-open" src="images/accordion-triangle-down.png" alt=""> </div>
+                <a class="payment__taxes-mobile toggle" href="javascript:void(0);">Налоги</a>
+                <div class="taxes__content-text-mobile">
+                  <p>Для поиска начислений по налогам в ГИС ГМП укажите ИНН или
+                    Индекс налогового документа, если у вас на руках есть квитанция.</p>
+                  <span>Важно!</span>
+                  <p>Согласно законодательству РФ вы не можете оплачивать налоги за других физических лиц. Принимаются
+                    только
+                    платежи физических лиц.</p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="payment__registry-mobile">
+                <img src="images/registry-mobile-icon.png" alt="">
+                <div class="accordion__triangle triangle-open" alt=""> </div>
+                <a class="payment__registry-mobile toggle" href="javascript:void(0);">Услуги Росреестра</a>
+                <div class="registry__content-text-mobile">
+                  <p>В поисковой строке укажите Код платежа, который был отправлен вам
+                    на почтовый ящик, указанный при подаче запроса в Росреестре.</p>
+                  <span>нет кода?</span>
+                  <p>Если у вас еще нет кода платежа, перейдите на сайт rosreestr.ru и сформируйте запрос на оплату
+                    электронных услуг Росреестра.</p>
+                </div>
+              </div>
+            </li>
+            <li><span>и другие услуги</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="traffic-police">
+    <div class="container">
+      <div class="trafficpolice__penalties">
+        <div class="trafficpolice__penalties-content">
+          <div class="trafficpolice__penalties-title">
+            Штрафы ГИБДД
+          </div>
+          <div class="trafficpolice__penalties-text">
+            <p>Для поиска укажите номера водительского удостоверения и свидетельства о регистрации ТС или номер штрафа.
+            </p>
+            <p>Если у вас есть на руках постановление о штрафе, вы можете указать реквизиты самостоятельно.</p>
+            <span>платить Вовремя — дешевле!</span>
+            <p>В первые 20 дней после выдачи постановления штраф можно оплатить со скидкой 50%. Для своевременной оплаты
+              штрафов настройте уведомления в Личном кабинете.</p>
+          </div>
+        </div>
+        <div class="trafficpolice__penalties-img">
+          <img src="images/trafficpolice-image.jpg" alt="">
+        </div>
+      </div>
+      <div class="trafficpolice__fees">
+        <div class="trafficpolice__fees-title">
+          <a href="#">Пошлины ГИБДД</a>
+        </div>
+        <div class="trafficpolice__fees-text">
+          <p>Перейдите по ссылке и укажите вид пошлины и отделение ГИБДД, предоставляющее вам услугу.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="debts">
+    <div class="container">
+      <div class="debts__inner">
+        <div class="debts__img"><img src="images/debts-image.jpg" alt=""></div>
+        <div class="debts__content">
+          <div class="debts__content-title">Судебные задолженности</div>
+          <div class="debts__content-text">
+            <p><span>Для поиска начислений в ГИС ГМП укажите документы:</span>
+              паспорт РФ, ИНН, СНИЛС или номер Исполнительного производства</p>
+            <p>Вы можете указать реквизиты платежа самостоятельно, заполнив форму.</p>
+            <div class="debts__content-text_lower"><span>Удобно!</span>
+              <p>Судебные задолженности можно погасить как сразу, так и по частям, комфортными для вас платежами.
+                Информацию
+                о совершенных платежах сохраняйте в Личном кабинете.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="taxes">
+    <div class="container">
+      <div class="taxes__inner">
+        <div class="taxes__content">
+          <div class="taxes__content-title">Налоги</div>
+          <div class="taxes__content-text">
+            <p>Для поиска начислений по налогам в ГИС ГМП укажите ИНН или
+              Индекс налогового документа, если у вас на руках есть квитанция.</p>
+            <span>Важно!</span>
+            <p>Согласно законодательству РФ вы не можете оплачивать налоги за других физических лиц. Принимаются только
+              платежи физических лиц.</p>
+          </div>
+        </div>
+        <div class="taxes__image"><img src="images/taxes-image.jpg" alt=""></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="registry">
+    <div class="container">
+      <div class="registry__inner">
+        <div class="registry__image"><img src="images/registry-image.jpg" alt=""></div>
+        <div class="registry__content">
+          <div class="registry__content-title">Услуги Росреестра</div>
+          <div class="registry__content-text">
+            <p>В поисковой строке укажите Код платежа, который был отправлен вам
+              на почтовый ящик, указанный при подаче запроса в Росреестре.</p>
+            <span>нет кода?</span>
+            <p>Если у вас еще нет кода платежа, перейдите на сайт rosreestr.ru и сформируйте запрос на оплату
+              электронных услуг Росреестра.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="partners">
+    <div class="container">
+      <div class="partners__inner">
+        <div class="partners__inner-title">С нами работают</div>
+        <div class="partners__content">
+          <div class="partners__content-list">
+            <ul>
+              <li>
+                <img src="images/partners-partner1.png" alt="">
+                <div>Партнер 1</div>
+              </li>
+              <li>
+                <img src="images/partners-partner2.png" alt="">
+                <div>Компания-партнер с длинным названием</div>
+              </li>
+              <li>
+                <img src="images/partners-partner3.png" alt="">
+                <div>Партнер 3</div>
+              </li>
+              <li>
+                <img src="images/partners-partner4.png" alt="">
+                <div>Название партнера 4</div>
+              </li>
+              <li>
+                <img src="images/partners-partner5.png" alt="">
+                <div>Компания-партнер 5</div>
+              </li>
+              <li>
+                <img src="images/partners-partner6.png" alt="">
+                <div>Партнер 6 с длинным названием</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__copy">
+        <div class="footer__copy-date">© 2012–2018</div>
+        <div class="footer__copy-company">ООО «Название компании»</div>
+        <div class="footer__copy-image"><a href="#"><img src="images/footer-copy-image.png" alt=""></a></div>
+      </div>
+      <div class="footer__menu">
+        <ul>
+          <li><a href="#">О сервисе</a></li>
+          <li><a href="#">Способы оплаты</a></li>
+          <li><a href="#">Как это работает</a></li>
+          <li><a href="#">Партнёрам</a></li>
+          <li><a href="#">Статьи и новости</a></li>
+        </ul>
+      </div>
+      <div class="footer__contacts">
+        <div class="footer__contacts-phone">
+          <div class="footer__contacts-phonenumber"><a href="tel:88001234567">8 800 123 4567</a></div>
+          <div class="footer__contacts-subtitle">звонок по России бесплатный</div>
+        </div>
+        <div class="footer__contacts-feedback"> <a href="#">Обратная связь</a></div>
+        <div class="footer__contacts-vk"><a href="#">Мы вКонтакте</a></div>
+      </div>
+      <div class="footer__copy-secondary">
+        <div class="footer__copy-secondary-text">Дополнительные ссылки и копирайты ООО «Фирма 2»</div>
+        <div class="footer__copy-secondary-image"><a href="#"><img src="images/footer-secondarycopy-image.svg"
+              alt=""></a></div>
+      </div>
+    </div>
+    <div class="share-btn">
+      <a href="#"><img src="images/share-btn.png" alt=""></a>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

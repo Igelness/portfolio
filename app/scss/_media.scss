@@ -58,6 +58,11 @@
       display: none;
     }
   }
+  .portfolio__item-content {
+    &:hover {
+      filter: none;
+    }
+  }
   .portfolio__item-github,
   .portfolio__item-link {
     a {
@@ -112,16 +117,13 @@
 }
 
 @media (max-width: 400px) {
+  .portfolio__item-content {
+    max-height: 138px;
+  }
   .portfolio__item {
     max-width: 280px;
     img {
       max-width: 280px;
-    }
-  }
-  .portfolio__item-content {
-    max-height: 138px;
-    &:hover {
-      filter: none;
     }
   }
   .portfolio__text {
