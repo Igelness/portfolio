@@ -1,0 +1,44 @@
+@import "./normalize.css";
+@import "./fonts.css";
+@import "./slick.css";
+@import "./jquery.fancybox.css";
+@import "./media.css";
+@import "./blocks/header.css";
+@import "./blocks/slider.css";
+@import "./blocks/features.css";
+@import "./blocks/examples.css";
+@import "./blocks/quote.css";
+@import "./blocks/footer.css";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Condensed", "sans-serif";
+  font-weight: 400;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+#modal {
+  display: none;
+}
