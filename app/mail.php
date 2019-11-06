@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
 
 require_once('phpmailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
@@ -10,13 +10,13 @@ $phone = $_POST['userphone'];
 $msg = $_POST['usermessage'];
 
 $mail->isSMTP();                                      
-$mail->Host = 'smtp.mail.ru';  																							// Specify main and backup SMTP servers
+$mail->Host = 'smtp.mail.ru';  																						
 $mail->SMTPAuth = true;                               
-$mail->Username = 'a.a.vorobyev0@mail.ru'; 
+$mail->Username = 'ponteleev.ivan@bk.ru'; 
 $mail->Password = 'XOFKgNcUf'; 
 $mail->SMTPSecure = 'ssl';                            
 $mail->Port = 465; 
-$mail->setFrom('a.a.vorobyev0@mail.ru'); 
+$mail->setFrom('ponteleev.ivan@bk.ru'); 
 $mail->addAddress('a.a.vorobyev0@gmail.com');     
 
 $mail->isHTML(true);                                  
@@ -30,4 +30,3 @@ if(!$mail->send()) {
 } else {
     header('location: message.html');
 }
-?>

@@ -41,6 +41,8 @@
   .footer__social-links-item {
     margin-bottom: 15px;
   }
+
+  
 }
 
 @media (max-width: 767px) {
@@ -81,5 +83,9 @@
 
   .header__content {
     display: block;
+  }
+  
+  .header__email:before {
+    top: -1px;
   }
 }
