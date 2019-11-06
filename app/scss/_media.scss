@@ -42,7 +42,22 @@
     margin-bottom: 15px;
   }
 
-  
+  .portfolio__item {
+    margin: 0 auto;
+  }
+
+  .portfolio__item-github,
+  .portfolio__item-link {
+    display: inline-block;
+  }
+
+  .portfolio__title {
+    text-align: center;
+    font-size: 28px;
+    small {
+      display: none;
+    }
+  }
 }
 
 @media (max-width: 767px) {
@@ -84,8 +99,36 @@
   .header__content {
     display: block;
   }
-  
+
   .header__email:before {
     top: -1px;
+  }
+}
+
+@media (max-width: 400px) {
+  .portfolio__item {
+    max-width: 280px;
+    img {
+      max-width: 280px;
+    }
+  }
+  .portfolio__item-content {
+    max-height: 138px;
+    &:hover {
+      filter: none;
+    }
+  }
+  .portfolio__text {
+    padding-top: 0px;
+    background-color: #f5f5f5;
+    width: 280px;
+    border-bottom: 2px solid #eee;
+  }
+
+  .portfolio__item-github,
+  .portfolio__item-link {
+    a {
+      background-color: rgba(#fff, 1);
+    }
   }
 }

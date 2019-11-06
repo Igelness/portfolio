@@ -23,7 +23,7 @@
 
 .portfolio__item-content {
   transition: 0.4s;
-  height: 157px;
+  max-height: 157px;
   &:hover {
     .portfolio__item-github,
     .portfolio__item-link {
