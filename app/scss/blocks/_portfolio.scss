@@ -6,19 +6,22 @@
   font-size: 40px;
   margin-top: 50px;
   font-weight: 300;
-  small {
-    font-size: 10px;
-    color: #aaa;
-  }
+}
+
+.portfolio__title-sub {
+  font-size: 10px;
+  color: #aaa;
 }
 
 .portfolio__item {
   padding: 40px 0 30px 0px;
   text-align: center;
   max-width: 320px;
-  img {
-    max-width: 320px;
-  }
+}
+
+.portfolio__image {
+  max-width: 320px;
+  max-height: 173px;
 }
 
 .portfolio__item-content {
@@ -41,17 +44,14 @@
   display: none;
   position: relative;
   bottom: 100px;
-  a {
-    width: 50px;
-    height: 50px;
-    background-color: rgba(#fff, 0.7);
-    filter: brightness(100%);
-    border-radius: 5px;
-    img {
-      width: 32px;
-      padding-top: 9px;
-    }
-  }
+}
+
+.portfolio__link {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(#fff, 0.7);
+  filter: brightness(100%);
+  border-radius: 5px;
 }
 
 .portfolio__item-github {
@@ -60,6 +60,11 @@
 
 .portfolio__item-link {
   left: 30px;
+}
+
+.portfolio__link-img {
+  width: 32px;
+  padding-top: 9px;
 }
 
 .portfolio__text {

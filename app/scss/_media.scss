@@ -54,20 +54,19 @@
   .portfolio__title {
     text-align: center;
     font-size: 28px;
-    small {
-      display: none;
-    }
+  }
+
+  .portfolio__title-sub {
+    display: none;
   }
   .portfolio__item-content {
     &:hover {
       filter: none;
     }
   }
-  .portfolio__item-github,
-  .portfolio__item-link {
-    a {
-      background-color: rgba(#fff, 1);
-    }
+
+  .portfolio__link {
+    background-color: rgba(#fff, 1);
   }
 }
 
@@ -122,9 +121,10 @@
   }
   .portfolio__item {
     max-width: 280px;
-    img {
-      max-width: 280px;
-    }
+  }
+
+  .portfolio__image {
+    max-width: 280px;
   }
   .portfolio__text {
     padding-top: 15px;
