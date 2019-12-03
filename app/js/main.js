@@ -22,3 +22,10 @@ $(function() {
     $(".header__menu").toggle();
   })
 });
+
+$(".upbtn").on("click", function(e){
+  $(window).scrollTop() = 0;
+  e.preventDefault();
+});
+
+
